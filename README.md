@@ -19,22 +19,24 @@
 
 6. Write code...
 
-7. In `Cargo.toml` in `[package]` section, add:
-   - `authors`
+7. In `Cargo.toml` in `[package]` section, add:  
+   - `authors`  
        Example: authos = ["mail@diloytte.com"]
-   - `license`
+   - `license`  
        Example: license = "MIT"
-   - `repository`
+   - `repository`  
        Example: repository = "https://github.com/diloytte/HOWTO-Publish-on-crates.io"
-   - `homepage`
+   - `homepage`  
        Example: homepage = "https://www.dilloyte.com' or just use github repo as a link.
-   - `readme`
+   - `readme`  
        Example: readme = "README.md"
-   - `keywords`
+   - `keywords`  
        Example: keywords = ["how to, project, something"]
-   -  `categories`
-       Example: keywords = ["category1, category2"]
+   -  `categories`  
+       Example: keywords = ["category1, category2"]  
        Visit: httpps://crates.io/category_slugs for finding the categories.
 
-8. Once publish is ready, execute: `cargo publish --dry-run`,
+8. Once publish is ready, execute: `cargo publish --dry-run`,  
    this is command that will not publish, but this is just a 'test publish' to see if there are any errors to fix.
+
+9. If all checks pass, publish crate using `cargoo publish`.
